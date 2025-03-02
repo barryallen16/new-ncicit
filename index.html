@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+
+    <script type="module" crossorigin src="assets/index-BT6yJaKA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BkZ77N8V.css" />
+  </head>
+  <body class="bg-[#0e0e0e] text-white overflow-x-hidden">
+    <nav
+      class="grid grid-cols-10 border-b-2 sticky top-0 bg-white z-50 text-black font-semibold"
+    >
+      <!-- Logo -->
+      <img
+        src="mgr-logo-new.png"
+        alt="Conference Logo"
+        class="w-[280px] h-[60px] object-center object-contain p-2 border-r-2 border-black col-span-2"
+      />
+      <a
+        href="#hero"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black col-start-4 border-l-2 text-center content-center"
+      >
+        Home
+      </a>
+      <a
+        href="#about"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
+      >
+        About
+      </a>
+      <a
+        href="#event-details"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
+      >
+        Event Details
+      </a>
+      <a
+        href="#convenor"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
+      >
+        Convenor
+      </a>
+      <a
+        href="#gallery"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
+      >
+        Gallery
+      </a>
+      <a
+        href="#contact"
+        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
+      >
+        Contact
+      </a>
+      <a
+        href="#reachus"
+        class="hover:text-[#da471d] transition-colors duration-300 border-l-2 text-center content-center"
+      >
+        Reach Us
+      </a>
+    </nav>
+    <section
+      id="hero"
+      class="flex h-screen w-screen bg-[url('pexels-googledeepmind-25630338.jpg')] bg-cover bg-center justify-center"
+    >
+      <div class="gap-2 flex flex-col p-4 items-center justify-around">
+        <div class="flex flex-col justify-center items-center">
+          <h2
+            class="text-4xl font-black text-neutral-400 text-center mix-blend-difference"
+          >
+            10<sup>th</sup> National Conference on Innovative Computing
+            Techniques
+          </h2>
+          <h1 class="text-5xl font-black uppercase">ncict'25 matrix</h1>
+        </div>
+        <a href="https://forms.gle/Pv5xkYPN8ab1cwj27" class="block">
+          <div class="relative flex justify-center items-center">
+            <svg
+              width="200"
+              height="200"
+              viewBox="0 0 345 332"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="relative"
+            >
+              <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f0775e" />
+                <stop offset="50%" stop-color="#da471d" />
+                <stop offset="100%" stop-color="#a0331b" />
+              </linearGradient>
+              <path
+                d="M146.179 0.206192L179.654 102.529L243.92 13.2838L213.859 117.378L318.025 74.8093L233.972 147.626L344.965 165.249L233.606 183.669L316.188 255.888L212.878 214.064L240.828 317.95L178.369 229.16L142.814 331.731L141.035 224.165L53.2635 292.855L112.729 200.664L0.608122 213.664L102.439 166.12L1.56572 119.303L113.431 131.498L55.8323 39.7285L142.216 107.793L146.179 0.206192Z"
+                fill="url(#myGradient)"
+              />
+            </svg>
+            <svg
+              width="200"
+              height="200"
+              viewBox="0 0 345 332"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="animate-ping absolute"
+            >
+              <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f0775e" />
+                <stop offset="50%" stop-color="#da471d" />
+                <stop offset="100%" stop-color="#a0331b" />
+              </linearGradient>
+
+              <path
+                d="M146.179 0.206192L179.654 102.529L243.92 13.2838L213.859 117.378L318.025 74.8093L233.972 147.626L344.965 165.249L233.606 183.669L316.188 255.888L212.878 214.064L240.828 317.95L178.369 229.16L142.814 331.731L141.035 224.165L53.2635 292.855L112.729 200.664L0.608122 213.664L102.439 166.12L1.56572 119.303L113.431 131.498L55.8323 39.7285L142.216 107.793L146.179 0.206192Z"
+                fill="url(#myGradient)"
+              />
+            </svg>
+            <span
+              class="absolute self-center z-20 font-bold text-xs text-white uppercase"
+              >register here</span
+            >
+          </div>
+        </a>
+        <div class="bottom-2.5 flex flex-col justify-center items-center">
+          <h4 class="text-3xl font-black">
+            7<sup>th</sup> & 8<sup>th</sup> APRIL 2025
+          </h4>
+          <h4 class="text-3xl font-black">
+            Organized by Department of Computer Science and Engineering
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="grid grid-cols-2 grid-rows-3 m-8 h-[200vh]">
+      <div class="p-4 border-2 border-b-0 border-r-0">
+        <h2 class="font-black text-4xl">About the University</h2>
+        <p class="mt-2">
+          Aiming to bring about change and progress through education, the Thai
+          Kannammal Educational Trust was constituted in 1985 and started Thai
+          Moogambigai Polytechnic College. Within three years of its inception,
+          The M.G.R. Engineering College was founded in 1988, and the Thai
+          Moogambigai Dental College was started in the year 1991. Both the
+          colleges acquired Deemed University status in 2003 as Dr. M.G.R.
+          Educational and Research Institute as per the orders of the University
+          Grants Commission, New Delhi and the Union Ministry of Human Resources
+          and Development, Government of India, New Delhi. Our programs offered
+          under different faculties are affiliated with various governmental
+          organization and approved by the Special Autonomous Status Provided by
+          Govt. of India, NAAC A+, ISO 9001-2015 Certified, IAO accreditation.
+        </p>
+      </div>
+      <img
+        src="annablock.jpg"
+        alt=""
+        class="p-4 h-[100%] border-2 border-b-0 w-full"
+      />
+
+      <img
+        src="gallery/cse.jpg"
+        class="p-4 h-[100%] border-2 border-r-0 border-b-0 w-full"
+      />
+      <div class="p-4 border-2 border-b-0">
+        <h2 class="font-black text-4xl">About the Department</h2>
+        <p class="mt-2">
+          The Department of Computer Science and Engineering aims to impart high
+          quality education to under graduate and post graduate students as well
+          as to carry out cutting edge technology in research on various
+          disciplines of Computer Science and Engineering. All the programmes
+          offered by the Department focus on preparing students for a wide range
+          of Software domain, equipping and moulding tomorrow's technocrats with
+          high caliber at all levels to meet the expectations of stakeholders.
+          The department is accredited by NBA and ABET.
+        </p>
+      </div>
+
+      <div class="p-4 border-2 border-r-0">
+        <h2 class="font-black text-4xl">About the Conference</h2>
+        <p class="mt-2">
+          NCICT'25 is a two days National Conference organized by the Department
+          of CSE through hybrid mode. In today's digital world where everything
+          is connected, the role of Computing Science has changed dramatically
+          over the last couple of decades. The 10th National Conference on
+          Innovative Computing Techniques under the theme of MATRIX mainly
+          focuses on research topics in IoT, Data Science, Artificial
+          Intelligence, Quantum Computing, Edge Computing, Cloud Computing,
+          Cryptocurrency, Cyber Security, Clean Technology and the topics of
+          interest are not limited. The objective of the conference is to
+          exchange innovative ideas among Academicians, Researchers and Industry
+          experts to enhance secured digital transformation.
+        </p>
+      </div>
+      <img src="gallery/photo5-19.jpeg" class="p-4 h-[100%] border-2 w-full" />
+    </section>
+    <div class="container" id="event-details">
+      <div class="flex justify-center items-center font-black text-4xl">
+        Event details
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 m-8">
+        <div
+          class="md:col-span-3 lg:col-span-3 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="p-6 text-white">
+            <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
+              Important Dates
+            </h2>
+            <div class="space-y-2">
+              <div class="flex flex-col sm:flex-row sm:justify-between">
+                <span class="font-semibold">Paper Submission:</span>
+                <span>March 24, 2025</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:justify-between">
+                <span class="font-semibold">Acceptance Notification:</span>
+                <span>March 30, 2025</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:justify-between">
+                <span class="font-semibold">Camera Ready Paper:</span>
+                <span>March 31, 2025</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:justify-between">
+                <span class="font-semibold">Conference Dates:</span>
+                <span>April 7-8, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-3 lg:col-span-3 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="p-6">
+            <h2
+              class="font-bold text-2xl mb-4 pb-2 border-b border-white text-white"
+            >
+              Submission Details
+            </h2>
+            <p class="leading-relaxed text-white">
+              After receiving acceptance mail from conference team, submit the
+              full paper through Microsoft CMT not exceeding 10 pages, in double
+              column IEEE format.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-3 lg:col-span-3 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="p-6">
+            <h2
+              class="font-bold text-2xl mb-4 pb-2 border-b border-white text-white"
+            >
+              Registration Fee
+            </h2>
+            <div class="space-y-3 mt-2">
+              <div class="flex justify-between items-center">
+                <span class="font-medium text-white">UG/PG Students:</span>
+                <span class="font-bold text-lg text-white">₹500</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="font-medium text-white"
+                  >Faculty/Research Scholar:</span
+                >
+                <span class="font-bold text-lg text-white">₹750</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="font-medium text-white">Industry Person:</span>
+                <span class="font-bold text-lg text-white">₹1,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-3 lg:col-span-3 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="p-6 text-white">
+            <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
+              Email id for article abstract submission
+            </h2>
+            <!-- <a
+              href="mailto:ncict@drmgrdu.ac.in"
+              class="bg-white text-[#da471d] flex justify-center items-center rounded-2xl py-4 px-2 hover:bg-gray-100 transition-colors cursor-pointer font-bold"
+            >
+              ncict@drmgrdu.ac.in
+            </a> -->
+            <a
+              href="mailto:ncict@drmgrdu.ac.in"
+              class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+            >
+              ncict@drmgrdu.ac.in
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-6 lg:col-span-9 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300 row-span-2"
+        >
+          <div class="p-6 text-white">
+            <div class="text-center mb-6">
+              <h2 class="text-3xl md:text-4xl font-bold">Event Schedule</h2>
+              <p class="text-xl mt-1">
+                The conference will be conducted in hybrid mode
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div class="p-5 border-2 border-white rounded-2xl">
+                <h3
+                  class="text-2xl font-bold mb-4 pb-2 border-b border-white p-4"
+                >
+                  April 7, 2025
+                </h3>
+
+                <div class="mt-6 space-y-6">
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">10:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">
+                        Inaugural - NCICT'25
+                      </h4>
+                      <p class="text-[#fde6e2]">Venue: RA Auditorium</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">11:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Technical Sessions</h4>
+                      <p class="text-[#fde6e2]">Hybrid Mode</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">13:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Lunch Break</h4>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">14:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Technical Sessions</h4>
+                      <p class="text-[#fde6e2]">Hybrid Mode</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">16:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Day 1 Concludes</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-5 border-2 border-white rounded-2xl">
+                <h3
+                  class="text-2xl font-bold mb-4 pb-2 border-b border-white p-4"
+                >
+                  April 8, 2025
+                </h3>
+
+                <div class="mt-6 space-y-6">
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">10:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Technical Sessions</h4>
+                      <p class="text-[#fde6e2]">Offline Mode</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">13:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Lunch Break</h4>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">14:30</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Valedictory</h4>
+                      <p class="text-[#fde6e2]">Venue: RA Auditorium</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <div class="w-16 font-bold text-xl text-right">16:00</div>
+                    <div class="ml-6 border-l-2 border-[#f0775e] pl-4">
+                      <h4 class="text-xl font-semibold">Conference Closes</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:col-span-3 lg:col-span-3 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300 row-span-2"
+        >
+          <div class="p-6 text-white">
+            <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
+              Publication Details
+            </h2>
+            <p class="mt-4 font-semibold">
+              All the accepted papers will be published with ISBN number in the
+              conference proceedings.
+            </p>
+            <p class="leading-relaxed">
+              The selected original plagiarism-free papers presented in the
+              conference will be published in UGC Care Journals/Scopus Indexed
+              journals after the review by the concerned journal and upon
+              payment of additional fee for the publication in the journal.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-6 lg:col-span-12 border-2 border-white shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="p-6 text-white">
+            <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
+              Call for Papers
+            </h2>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-1 mt-4"
+            >
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Network Security</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Robotics and Automation</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Image Processing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Technology and IT Service</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Web Development</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Artificial Intelligence and Machine Learning</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>E-Commerce</span>
+                </li>
+              </ul>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Virtual Reality(VR) and Augmented Reality(AR)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Ethical Computing and Responsible AI</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>E-waste Management and Circular Computing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Education and Capacity Building</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Green Computing and Energy Efficiency</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Edge Computing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Data Science and Big Data</span>
+                </li>
+              </ul>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Digital Crop Farming</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Deep Learning</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Software Development</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Cyber Security</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Cloud Computing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Blockchain and Cryptocurrency</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Internet of Things (IoT)</span>
+                </li>
+              </ul>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Quantum Computing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>AI for Sustainable Development</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Sustainable Infrastructure and Smart Cities</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Sustainable Software Development</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Human-Computer Interaction</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Distributed Systems</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-[#f0775e] mr-2">✓</span>
+                  <span>Mobile and Ubiquitous Computing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="convenor">
+      <div class="flex justify-center items-center flex-col">
+        <h2 class="font-black text-4xl p-4">Conference Convenor</h2>
+        <div
+          class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 w-[450px]"
+        >
+          <img src="people/hod.png" alt="" class="p-2 w-[300px] h-[300px]" />
+          <h3 class="font-bold">Dr.S.Geetha</h3>
+          <h3 class="font-bold">HoD-CSE</h3>
+          <p>
+            I am delighted to extend my warmest congratulations for National
+            Conference NCICT’ 25. As the conference unfolds, may it be a forum
+            for the exchange of ideas, the cultivation of new insights, and the
+            forging of valuable connections. I have full confidence that NCICT’
+            25 will be a resounding success, leaving a lasting impact on all
+            participants. May the presentations inspire, the discussions
+            enlighten, and the networking opportunities foster collaboration and
+            innovation. Wishing the entire team continued success throughout the
+            conference. May it exceed expectations and be remembered as a
+            milestone event.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center flex-col gap-3 mt-4">
+        <h2 class="font-black text-2xl">Organizing Secretaries</h2>
+
+        <div class="flex gap-4">
+          <div
+            class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 w-[450px]"
+          >
+            <img
+              src="people/soniya.jpg"
+              alt=""
+              class="p-2 w-[300px] h-[300px] object-cover"
+            />
+            <h3 class="font-bold">Dr.G.Soniya Priyatharsini</h3>
+            <h3 class="font-bold">Prof.-CSE</h3>
+            <p>
+              It is with great pleasure that I welcome you to NCICT’25 [Matrix]
+              as the conference coordinator. I extend my heartfelt wishes for a
+              successful and enriching event. May these days be marked by
+              insightful discussions, valuable connections, and a shared passion
+              for the conference theme. Your active participation is eagerly
+              anticipated, and I am confident that this gathering will be a
+              collective success.
+            </p>
+          </div>
+          <div
+            class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 w-[450px]"
+          >
+            <img
+              src="people/maheswari-mam.jpeg"
+              alt=""
+              class="p-2 w-[300px] h-[300px] object-cover"
+            />
+            <h3 class="font-bold">Mrs. A.Maheswari</h3>
+            <h3 class="font-bold">Asst. Prof.-CSE</h3>
+            <p>
+              As one of the Organizing Secretary of NCICT’ 25, I am very much
+              excited about hosting the NCICT’ 25. I am expecting gathering of
+              brilliant minds, thought-provoking discussions, and groundbreaking
+              insights to take place in the conference. Let's make this
+              conference an unforgettable platform for learning and networking.
+              Spread the word, mark your calendars, and join us in making a
+              positive impact!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-8" id="gallery">
+      <div class="font-black text-4xl flex justify-center items-center p-4">
+        <h1>Gallery</h1>
+      </div>
+      <div class="grid grid-cols-6 h-[600px] grid-rows-2">
+        <!-- Distinct Images -->
+        <img
+          src="gallery/photo1-24.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo2-24.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo3-24.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo1-23.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo2-23.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo3-23.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-white p-4"
+        />
+        <img
+          src="gallery/photo4-23.jpg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-t-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo2-19.jpeg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-t-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo3-19.jpeg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-t-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo4-19.jpeg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-t-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo5-19.jpeg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-r-0 border-t-0 border-white p-4"
+        />
+        <img
+          src="gallery/photo6-19.jpeg"
+          alt=""
+          class="h-full w-full object-cover border-2 border-t-0 border-white p-4"
+        />
+      </div>
+    </section>
+    <section id="technicalpartners" class="mb-8">
+      <h1 class="font-black text-4xl mb-8 flex justify-center">
+        Technical partners
+      </h1>
+      <div
+        x-data="{}"
+        x-init="$nextTick(() => {
+        let ul = $refs.logos;
+        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+        ul.nextSibling.setAttribute('aria-hidden', 'true');
+    })"
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+      >
+        <ul
+          x-ref="logos"
+          class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-slide"
+        >
+          <li class="flex items-center gap-2">
+            <img src="logos/Cisco-logo.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/CSI-Logo-e1623395836342.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/IBM_logo.svg.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/Microsoft-Logo.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/RedHat_White.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/acm.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/Cisco-logo.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/CSI-Logo-e1623395836342.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/IBM_logo.svg.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/Microsoft-Logo.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/RedHat_White.png" class="h-[50px]" />
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="logos/acm.png" class="h-[50px]" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="flex justify-center items-center p-4 font-black text-4xl">
+        Contact
+      </h2>
+      <div class="grid grid-cols-3">
+        <div
+          class="flex flex-col justify-center items-center border-2 border-white p-4"
+        >
+          <h2 class="p-4 text-xl">
+            The convenor
+            <br />NCICT' 25 <br />Department of CSE <br />Dr.MGR Educational and
+            Research Institute <br />Maduravayol,Chennai,TN
+          </h2>
+        </div>
+        <div class="p-4 flex flex-col gap-4 border-2 border-white">
+          <div
+            class="flex flex-col justify-center items-center border-2 border-white p-4"
+          >
+            <h2 class="font-bold pb-4 text-xl">Dr.G.Soniya Priyatharsini</h2>
+
+            <div class="grid grid-cols-2 gap-4">
+              <a
+                href="tel:+917299885500"
+                class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+                >CLICK TO CALL</a
+              >
+              <a
+                href="https://wa.me/917299885500?text="
+                class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+                >CHAT IN WHATSAPP</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center border-2 border-white p-4"
+          >
+            <h2 class="font-bold pb-4 text-xl">Mrs.A.Maheswari</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <a
+                href="tel:+919884536108"
+                class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+                >CLICK TO CALL</a
+              >
+              <a
+                href="https://wa.me/919884536108?text="
+                class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+                >CHAT IN WHATSAPP</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center border-2 border-white p-4"
+        >
+          <a
+            class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
+            href="mailto:ncict@drmgrdu.ac.in"
+          >
+            ncict@drmgrdu.ac.in
+          </a>
+        </div>
+      </div>
+    </section>
+    <h1 class="font-black text-4xl m-4 flex justify-center">Reach us</h1>
+    <section id="reachus" class="relative h-screen w-screen flex">
+      <img src="iphone.png" class="h-screen w-screen object-contain" />
+      <div
+        class="absolute h-[620px] w-[290px] place-self-center -left-[50%] -right-[50%]"
+      >
+        <object
+          class="h-full w-full rounded-[48px]"
+          data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62183.51854226706!2d80.10174324863281!3d13.069378000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261504145fe7d%3A0x58810f43c3a748ae!2sDr.%20M.G.R.%20Educational%20And%20Research%20Institute%20university!5e0!3m2!1sen!2sin!4v1706076383241!5m2!1sen!2sin"
+        ></object>
+      </div>
+      <div
+        class="bg-[#0e0e0e] absolute h-[30px] w-[100px] place-self-center -left-[50%] -right-[50%] top-20 rounded-full"
+      ></div>
+    </section>
+  </body>
+</html>
