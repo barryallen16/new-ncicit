@@ -171,16 +171,15 @@
       <div class="gap-2 flex flex-col p-4 items-center justify-around">
         <div class="flex flex-col justify-center items-center">
           <h2
-            class="text-2xl sm:text-4xl font-black text-neutral-400 text-center mix-blend-difference"
+            class="text-3xl sm:text-5xl font-black text-center "
           >
-            10<sup>th</sup> National Conference on Innovative Computing
+            10<sup>th</sup> National Conference on <br>Innovative Computing
             Techniques
           </h2>
-          <h1 class="text-4xl sm:text-5xl md:text-4xl font-black uppercase">
+          <!-- <h1 class="text-4xl sm:text-5xl md:text-4xl font-black uppercase">
             ncict'25 matrix
-          </h1>
+          </h1> -->
         </div>
-        <a href="https://forms.gle/CVaiUdudYoFAKdqp9" class="block">
           <div class="relative flex justify-center items-center">
             <svg
               width="200"
@@ -201,8 +200,8 @@
               />
             </svg>
             <svg
-              width="200"
-              height="200"
+              width="150"
+              height="150"
               viewBox="0 0 345 332"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -220,17 +219,17 @@
               />
             </svg>
             <span
-              class="absolute self-center z-20 font-bold text-xs text-white uppercase"
-              >register here</span
+              class="absolute self-center z-20 font-black  text-white uppercase"
+              >ncict'25 <br>matrix</span
             >
           </div>
-        </a>
+      
         <div class="bottom-2.5 flex flex-col justify-center items-center">
-          <h4 class="text-2xl sm:text-3xl font-black mix-blend-difference">
+          <h4 class="text-3xl sm:text-3xl font-black ">
             7<sup>th</sup> & 8<sup>th</sup> APRIL 2025
           </h4>
           <h4
-            class="text-2xl sm:text-3xl font-black mix-blend-difference text-center"
+            class="text-3xl sm:text-3xl font-black  text-center"
           >
             Organized by Department of Computer Science and Engineering
           </h4>
@@ -745,70 +744,56 @@
         class="grid md:grid-cols-4 lg:grid-cols-6 lg:h-[600vh] lg:grid-rows-2 md:grid-rows-3 grid-rows-12 grid-cols-1 h-[400vh]"
       > -->
       <div
-        class="grid md:grid-cols-4 lg:grid-cols-6 lg:h-[600vh] lg:grid-rows-2 md:grid-rows-3 grid-rows-12 grid-cols-1 h-[400vh]"
-      >
-        <!-- Distinct Images -->
-        <img
-          src="gallery/photo1-24.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0 "
-        />
-        <img
-          src="gallery/photo2-24.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-white p-4 "
-        />
-        <img
-          src="gallery/photo3-24.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo1-23.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo2-23.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo3-23.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-white p-4"
-        />
-        <img
-          src="gallery/photo4-23.jpg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo2-19.jpeg"
-          alt=""
-          class="h-full w-full object-cover object-top border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo3-19.jpeg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo4-19.jpeg"
-          alt=""
-          class="h-full w-full object-cover md:object-center object-top border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo5-19.jpeg"
-          alt=""
-          class="h-full w-full object-cover object-center border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
-        />
-        <img
-          src="gallery/photo6-19.jpeg"
-          alt=""
-          class="h-full w-full object-cover md:object-center object-top border-2 border-t-0 border-white p-4"
-        />
-      </div>
+  x-data="{}"
+  x-init="$nextTick(() => {
+    let ul = $refs.logo;
+    ul.insertAdjacentHTML('afterend', ul.outerHTML);
+    ul.nextSibling.setAttribute('aria-hidden', 'true');
+  })"
+  class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+>
+  <ul
+    x-ref="logo"
+    class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:w-[200px] [&_li]:h-[200px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:object-center [&_img]:max-w-none animate-slide"
+  >
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo1-24.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo2-24.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo3-24.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo1-23.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo2-23.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo3-23.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo4-23.jpg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo2-19.jpeg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo3-19.jpeg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo4-19.jpeg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo5-19.jpeg" />
+    </li>
+    <li class="flex items-center gap-2">
+      <img src="gallery/photo6-19.jpeg" />
+    </li>
+  </ul>
+</div>
     </section>
     <section id="technicalpartners" class="mb-8">
       <h1 class="font-black text-4xl mb-8 flex justify-center">
