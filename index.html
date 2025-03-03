@@ -20,66 +20,153 @@
     <script type="module" crossorigin src="assets/index-BT6yJaKA.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BkZ77N8V.css" />
   </head>
-  <body class="bg-[#0e0e0e] text-white overflow-x-hidden">
+  <body class="bg-[#0E0E55] text-white overflow-x-hidden">
     <nav
-      class="grid grid-cols-10 border-b-2 sticky top-0 bg-white z-50 text-black font-semibold"
+      class="flex justify-between border-b-2 sticky top-0 bg-white z-50 text-black font-semibold"
     >
       <!-- Logo -->
       <img
         src="mgr-logo-new.png"
         alt="Conference Logo"
-        class="w-[280px] h-[60px] object-center object-contain p-2 border-r-2 border-black col-span-2"
+        class="w-[200px] md:w-[280px] h-[60px] object-center object-contain p-2 border-r-2 border-black"
       />
-      <a
-        href="#hero"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black col-start-4 border-l-2 text-center content-center"
-      >
-        Home
-      </a>
-      <a
-        href="#about"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
-      >
-        About
-      </a>
-      <a
-        href="#event-details"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
-      >
-        Event Details
-      </a>
-      <a
-        href="#convenor"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
-      >
-        Convenor
-      </a>
-      <a
-        href="#gallery"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
-      >
-        Gallery
-      </a>
-      <a
-        href="#contact"
-        class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 text-center content-center"
-      >
-        Contact
-      </a>
-      <a
-        href="#reachus"
-        class="hover:text-[#da471d] transition-colors duration-300 border-l-2 text-center content-center"
-      >
-        Reach Us
-      </a>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 col-start-10">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
 
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex justify-center items-center">
+        <a
+          href="#hero"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black px-4 text-center content-center"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 px-4 text-center content-center"
+        >
+          About
+        </a>
+        <a
+          href="#event-details"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 px-4 text-center content-center"
+        >
+          Event Details
+        </a>
+        <a
+          href="#convenor"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 px-4 text-center content-center"
+        >
+          Convenor
+        </a>
+        <a
+          href="#gallery"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 px-4 text-center content-center"
+        >
+          Gallery
+        </a>
+        <a
+          href="#contact"
+          class="hover:text-[#da471d] transition-colors duration-300 border-r-0 border-black border-l-2 px-4 text-center content-center"
+        >
+          Contact
+        </a>
+        <a
+          href="#reachus"
+          class="hover:text-[#da471d] transition-colors duration-300 border-l-2 px-4 text-center content-center"
+        >
+          Reach Us
+        </a>
+      </div>
+
+      <!-- Hamburger Menu Button (Visible on Mobile) -->
+      <div
+        class="invisible max-md:visible max-md:flex justify-center items-center mx-4 cursor-pointer"
+      >
+        <button
+          id="menu-button"
+          class="text-black focus:outline-none cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden fixed inset-0 bg-white z-50 flex-col items-center justify-center"
+      >
+        <!-- Close Button -->
+        <button
+          id="close-button"
+          class="absolute top-4 right-4 text-black focus:outline-none cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <!-- Mobile Navigation Links -->
+        <a href="#hero" class="text-black text-lg py-2">Home</a>
+        <a href="#about" class="text-black text-lg py-2">About</a>
+        <a href="#event-details" class="text-black text-lg py-2"
+          >Event Details</a
+        >
+        <a href="#convenor" class="text-black text-lg py-2">Convenor</a>
+        <a href="#gallery" class="text-black text-lg py-2">Gallery</a>
+        <a href="#contact" class="text-black text-lg py-2">Contact</a>
+        <a href="#reachus" class="text-black text-lg py-2">Reach Us</a>
+      </div>
     </nav>
+    <script>
+      const menuBtn = document.getElementById("menu-button");
+      const closeBtn = document.getElementById("close-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuItems = document.querySelectorAll("#mobile-menu a");
+      menuItems.forEach((element) => {
+        element.addEventListener("click", () => {
+          console.log("Close button clicked");
+          mobileMenu.classList.remove("flex");
+          mobileMenu.classList.add("hidden");
+        });
+      });
+      menuBtn.addEventListener("click", () => {
+        console.log("Menu button clicked");
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        console.log("Close button clicked");
+        mobileMenu.classList.remove("flex");
+        mobileMenu.classList.add("hidden");
+      });
+    </script>
     <section
       id="hero"
-      class="flex h-screen w-screen bg-[url('pexels-googledeepmind-25630338.jpg')] bg-cover bg-center justify-center"
+      class="flex h-screen w-screen bg-[url('hero.png')] bg-cover bg-center justify-center"
     >
       <div class="gap-2 flex flex-col p-4 items-center justify-around">
         <div class="flex flex-col justify-center items-center">
@@ -93,7 +180,7 @@
             ncict'25 matrix
           </h1>
         </div>
-        <a href="https://forms.gle/Pv5xkYPN8ab1cwj27" class="block">
+        <a href="https://forms.gle/CVaiUdudYoFAKdqp9" class="block">
           <div class="relative flex justify-center items-center">
             <svg
               width="200"
@@ -151,77 +238,80 @@
       </div>
     </section>
     <section
-  id="about"
-  class="grid lg:grid-cols-2 lg:grid-rows-3 m-8 lg:h-[200vh] h-[450vh] grid-cols-1 grid-rows-6 border-2"
->
-  <!-- About the University -->
-  <div class="p-4 border-b-2 lg:border-r-2">
-    <h2 class="font-black md:text-4xl text-2xl">About the University</h2>
-    <p class="mt-2">
-      Aiming to bring about change and progress through education, the Thai
-      Kannammal Educational Trust was constituted in 1985 and started Thai
-      Moogambigai Polytechnic College. Within three years of its inception,
-      The M.G.R. Engineering College was founded in 1988, and the Thai
-      Moogambigai Dental College was started in the year 1991. Both the
-      colleges acquired Deemed University status in 2003 as Dr. M.G.R.
-      Educational and Research Institute as per the orders of the University
-      Grants Commission, New Delhi and the Union Ministry of Human Resources
-      and Development, Government of India, New Delhi. Our programs offered
-      under different faculties are affiliated with various governmental
-      organization and approved by the Special Autonomous Status Provided by
-      Govt. of India, NAAC A+, ISO 9001-2015 Certified, IAO accreditation.
-    </p>
-  </div>
+      id="about"
+      class="grid lg:grid-cols-2 lg:grid-rows-3 m-8 lg:h-[150vh] h-[450vh] grid-cols-1 grid-rows-6 border-2"
+    >
+      <!-- About the University -->
+      <div class="p-4 border-b-2 lg:border-r-2">
+        <h2 class="font-black md:text-4xl text-2xl">About the University</h2>
+        <p class="mt-2 text-justify">
+          Aiming to bring about change and progress through education, the Thai
+          Kannammal Educational Trust was constituted in 1985 and started Thai
+          Moogambigai Polytechnic College. Within three years of its inception,
+          The M.G.R. Engineering College was founded in 1988, and the Thai
+          Moogambigai Dental College was started in the year 1991. Both the
+          colleges acquired Deemed University status in 2003 as Dr. M.G.R.
+          Educational and Research Institute as per the orders of the University
+          Grants Commission, New Delhi and the Union Ministry of Human Resources
+          and Development, Government of India, New Delhi. Our programs offered
+          under different faculties are affiliated with various governmental
+          organization and approved by the Special Autonomous Status Provided by
+          Govt. of India, NAAC A+, ISO 9001-2015 Certified, IAO accreditation.
+        </p>
+      </div>
 
-  <!-- Image 1 -->
-  <img
-    src="annablock.jpg"
-    alt=""
-    class="p-4 h-[100%] w-full border-b-2 lg:border-b-0"
-  />
+      <!-- Image 1 -->
+      <img
+        src="annablock.jpg"
+        alt=""
+        class="p-4 h-[100%] w-full border-b-2 lg:border-b-0 object-cover"
+      />
 
-  <!-- Image 2 -->
-  <img
-    src="gallery/cse.jpg"
-    class="p-4 h-[100%] w-full border-b-2 lg:border-r-2"
-  />
+      <!-- Image 2 -->
+      <img
+        src="gallery/cse.jpg"
+        class="p-4 h-[100%] w-full border-b-2 lg:border-r-2 object-cover"
+      />
 
-  <!-- About the Department -->
-  <div class="p-4 border-b-2">
-    <h2 class="font-black md:text-4xl text-2xl">About the Department</h2>
-    <p class="mt-2">
-      The Department of Computer Science and Engineering aims to impart high
-      quality education to under graduate and post graduate students as well
-      as to carry out cutting edge technology in research on various
-      disciplines of Computer Science and Engineering. All the programmes
-      offered by the Department focus on preparing students for a wide range
-      of Software domain, equipping and moulding tomorrow's technocrats with
-      high caliber at all levels to meet the expectations of stakeholders.
-      The department is accredited by NBA and ABET.
-    </p>
-  </div>
+      <!-- About the Department -->
+      <div class="p-4 border-b-2">
+        <h2 class="font-black md:text-4xl text-2xl">About the Department</h2>
+        <p class="mt-2 text-justify">
+          The Department of Computer Science and Engineering aims to impart high
+          quality education to under graduate and post graduate students as well
+          as to carry out cutting edge technology in research on various
+          disciplines of Computer Science and Engineering. All the programmes
+          offered by the Department focus on preparing students for a wide range
+          of Software domain, equipping and moulding tomorrow's technocrats with
+          high caliber at all levels to meet the expectations of stakeholders.
+          The department is accredited by NBA and ABET.
+        </p>
+      </div>
 
-  <!-- About the Conference -->
-  <div class="p-4 border-b-2 lg:border-r-2 lg:border-b-0">
-    <h2 class="font-black md:text-4xl text-2xl ">About the Conference</h2>
-    <p class="mt-2">
-      NCICT'25 is a two days National Conference organized by the Department
-      of CSE through hybrid mode. In today's digital world where everything
-      is connected, the role of Computing Science has changed dramatically
-      over the last couple of decades. The 10th National Conference on
-      Innovative Computing Techniques under the theme of MATRIX mainly
-      focuses on research topics in IoT, Data Science, Artificial
-      Intelligence, Quantum Computing, Edge Computing, Cloud Computing,
-      Cryptocurrency, Cyber Security, Clean Technology and the topics of
-      interest are not limited. The objective of the conference is to
-      exchange innovative ideas among Academicians, Researchers and Industry
-      experts to enhance secured digital transformation.
-    </p>
-  </div>
+      <!-- About the Conference -->
+      <div class="p-4 border-b-2 lg:border-r-2 lg:border-b-0">
+        <h2 class="font-black md:text-4xl text-2xl">About the Conference</h2>
+        <p class="mt-2 text-justify">
+          NCICT'25 is a two days National Conference organized by the Department
+          of CSE through hybrid mode. In today's digital world where everything
+          is connected, the role of Computing Science has changed dramatically
+          over the last couple of decades. The 10th National Conference on
+          Innovative Computing Techniques under the theme of MATRIX mainly
+          focuses on research topics in IoT, Data Science, Artificial
+          Intelligence, Quantum Computing, Edge Computing, Cloud Computing,
+          Cryptocurrency, Cyber Security, Clean Technology and the topics of
+          interest are not limited. The objective of the conference is to
+          exchange innovative ideas among Academicians, Researchers and Industry
+          experts to enhance secured digital transformation.
+        </p>
+      </div>
 
-  <!-- Image 3 -->
-  <img src="gallery/photo5-19.jpeg" class="p-4 h-[100%] w-full" />
-</section>
+      <!-- Image 3 -->
+      <img
+        src="gallery/photo5-19.jpeg"
+        class="p-4 h-[100%] w-full object-cover"
+      />
+    </section>
     <div class="flex flex-col m-8" id="event-details">
       <div class="flex justify-center items-center font-black text-4xl mb-4">
         Event details
@@ -264,7 +354,7 @@
             >
               Submission Details
             </h2>
-            <p class="leading-relaxed text-white">
+            <p class="leading-relaxed text-white text-justify">
               After receiving acceptance mail from conference team, submit the
               full paper through Microsoft CMT not exceeding 10 pages, in double
               column IEEE format.
@@ -307,12 +397,6 @@
             <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
               Email id for article abstract submission
             </h2>
-            <!-- <a
-              href="mailto:ncict@drmgrdu.ac.in"
-              class="bg-white text-[#da471d] flex justify-center items-center rounded-2xl py-4 px-2 hover:bg-gray-100 transition-colors cursor-pointer font-bold"
-            >
-              ncict@drmgrdu.ac.in
-            </a> -->
             <a
               href="mailto:ncict@drmgrdu.ac.in"
               class="text-white border-2 border-white flex justify-center items-center p-4 hover:bg-white hover:text-black transition-colors cursor-pointer font-bold"
@@ -334,7 +418,7 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="p-5 border-2 border-white ">
+              <div class="p-5 border-2 border-white">
                 <h3
                   class="text-2xl font-bold mb-4 pb-2 border-b border-white p-4"
                 >
@@ -433,11 +517,11 @@
             <h2 class="font-bold text-2xl mb-4 pb-2 border-b border-white p-4">
               Publication Details
             </h2>
-            <p class="mt-4 font-semibold">
+            <p class="mt-4 font-semibold text-justify">
               All the accepted papers will be published with ISBN number in the
               conference proceedings.
             </p>
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-justify">
               The selected original plagiarism-free papers presented in the
               conference will be published in UGC Care Journals/Scopus Indexed
               journals after the review by the concerned journal and upon
@@ -585,12 +669,12 @@
       <div class="flex justify-center items-center flex-col">
         <h2 class="font-black text-4xl p-4">Conference Convenor</h2>
         <div
-          class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 m-8 sm:w-[450px]"
+          class="items-center text-left flex flex-col p-4 bg-white border-black border-3 m-8 sm:w-[450px] text-black"
         >
           <img src="people/hod.png" alt="" class="p-2 w-[300px] h-[300px]" />
           <h3 class="font-bold">Dr.S.Geetha</h3>
           <h3 class="font-bold">HoD-CSE</h3>
-          <p>
+          <p class="text-justify">
             I am delighted to extend my warmest congratulations for National
             Conference NCICT’ 25. As the conference unfolds, may it be a forum
             for the exchange of ideas, the cultivation of new insights, and the
@@ -607,9 +691,11 @@
       <div class="flex items-center justify-center flex-col gap-3 mt-4">
         <h2 class="font-black text-2xl">Organizing Secretaries</h2>
 
-        <div class="flex gap-4 flex-col md:flex-row">
+        <div
+          class="grid max-md:grid-rows-2 m-8 gap-4 md:grid-cols-2 grid-rows-none"
+        >
           <div
-            class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 sm:w-[450px] m-8 "
+            class="items-center text-left flex flex-col p-4 bg-white border-black border-3 sm:w-[450px] md:max-lg:w-[350px] text-black"
           >
             <img
               src="people/soniya.jpg"
@@ -618,7 +704,7 @@
             />
             <h3 class="font-bold">Dr.G.Soniya Priyatharsini</h3>
             <h3 class="font-bold">Prof.-CSE</h3>
-            <p>
+            <p class="text-justify">
               It is with great pleasure that I welcome you to NCICT’25 [Matrix]
               as the conference coordinator. I extend my heartfelt wishes for a
               successful and enriching event. May these days be marked by
@@ -629,7 +715,7 @@
             </p>
           </div>
           <div
-            class="items-center text-left flex flex-col p-4 bg-[#0e0e0e] border-white border-2 sm:w-[450px] mx-8"
+            class="items-center text-left flex flex-col p-4 bg-white border-black border-3 sm:w-[450px] md:max-lg:w-[350px] text-black"
           >
             <img
               src="people/maheswari-mam.jpeg"
@@ -638,7 +724,7 @@
             />
             <h3 class="font-bold">Mrs. A.Maheswari</h3>
             <h3 class="font-bold">Asst. Prof.-CSE</h3>
-            <p>
+            <p class="text-justify">
               As one of the Organizing Secretary of NCICT’ 25, I am very much
               excited about hosting the NCICT’ 25. I am expecting gathering of
               brilliant minds, thought-provoking discussions, and groundbreaking
@@ -662,12 +748,12 @@
         <img
           src="gallery/photo1-24.jpg"
           alt=""
-          class="h-full w-full object-cover object-center border-2 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0"
+          class="h-full w-full object-cover object-center border-2 border-white p-4 lg:border-b-2 border-b-0 border-r-2 lg:border-r-0 md:col-start-1 md:row-start-1"
         />
         <img
           src="gallery/photo2-24.jpg"
           alt=""
-          class="h-full w-full object-cover object-center border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-white p-4"
+          class="h-full w-full object-cover object-center border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-white p-4 md:col-start-2 md:row-start-1"
         />
         <img
           src="gallery/photo3-24.jpg"
@@ -697,7 +783,7 @@
         <img
           src="gallery/photo2-19.jpeg"
           alt=""
-          class="h-full w-full object-cover object-top border-2 border-r-0 border-t-0 border-white p-4 md:object-center border-r-2 lg:border-r-0"
+          class="h-full w-full object-cover object-top border-2 border-r-0 border-t-0 border-white p-4 border-r-2 lg:border-r-0"
         />
         <img
           src="gallery/photo3-19.jpeg"
@@ -848,7 +934,10 @@
     </section>
     <h1 class="font-black text-4xl m-4 flex justify-center">Reach us</h1>
     <section id="reachus" class="relative h-screen w-screen flex">
-      <img src="iphone.png" class="h-screen w-screen object-contain sm:block none" />
+      <img
+        src="iphone.png"
+        class="h-screen w-screen object-contain lg:visible invisible"
+      />
       <div
         class="absolute h-[620px] w-[290px] place-self-center -left-[50%] -right-[50%]"
       >
